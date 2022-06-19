@@ -1,0 +1,45 @@
+{
+  "extends": ["config:base", ":semanticCommits"],
+  "packageRules": [
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "updateTypes": ["patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["*"],
+      "minor": {
+        "groupName": "all non-major dependencies",
+        "groupSlug": "all-minor-patch"
+      }
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": ["jest"],
+      "groupName": "jest"
+    },
+    {
+      "matchPackagePatterns": ["prettier"],
+      "labels": ["formatting"]
+    },
+    {
+      "matchDepTypes": ["optionalDependencies"],
+      "addLabels": ["optional"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "addLabels": ["devDependencies"]
+    },
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "addLabels": ["peerDependencies"]
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "addLabels": ["core_dependencies"]
+    }
+  ]
+}

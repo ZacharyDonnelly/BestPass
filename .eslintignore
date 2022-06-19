@@ -1,0 +1,24 @@
+#type defs
+/**/*.d.ts
+
+# compiled output
+/dist/
+/build/
+/venv/
+/tmp/
+
+# dependencies
+/bower_components/
+/node_modules/
+
+# misc
+/coverage/
+!.*
+.*/
+.eslintcache
+.DS_Store
+.env
+.gitignore
+.env
+.gitattributes
+.vscode/*
