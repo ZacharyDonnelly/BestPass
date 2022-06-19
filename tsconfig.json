@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "module": "ESNext",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "./view",
+    "lib": ["dom", "dom.iterable", "ESNext"],
+    "allowJs": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "pretty": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "stripInternal": true,
+    "strictPropertyInitialization": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noEmit": false,
+    "paths": {
+      "*": ["*", "view/*"]
+    }
+  },
+  "include": ["view/**/*"],
+  "exclude": ["coverage", "config", "dist", "node_modules/**", "**/*.test.js", "**/*.test.ts"]
+}
