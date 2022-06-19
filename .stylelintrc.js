@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   extends: ['stylelint-config-prettier'],
   plugins: ['stylelint-no-unsupported-browser-features', 'stylelint-a11y', 'stylelint-scss', 'stylelint-prettier'],

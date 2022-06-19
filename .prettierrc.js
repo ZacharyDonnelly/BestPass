@@ -1,11 +1,13 @@
+'use strict'
+
 module.exports = {
   singleQuote: true,
   bracketSpacing: true,
-  arrowParens: "always",
+  arrowParens: 'always',
   printWidth: 120,
-  endOfLine: "lf",
+  endOfLine: 'lf',
   semi: false,
-  trailingComma: "none",
+  trailingComma: 'none',
   overrides: [
     {
       files: ['package.json', 'yarn.lock', '*.md'],
@@ -14,8 +16,8 @@ module.exports = {
         singleQuote: false,
         tabWidth: 2,
         trailingComma: 'none',
-        useTabs: false,
-      },
-    },
-  ],
+        useTabs: false
+      }
+    }
+  ]
 }

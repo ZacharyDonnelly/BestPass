@@ -1,3 +1,5 @@
+'use strict'
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 const envPreset = isDevelopment
   ? ['@babel/preset-env', { loose: true }]
@@ -13,9 +15,9 @@ const envPreset = isDevelopment
         exclude: ['transform-typeof-symbol'],
         loose: true,
         targets: {
-          node: 'current',
-        },
-      },
+          node: 'current'
+        }
+      }
     ]
 
 module.exports = {
@@ -23,17 +25,17 @@ module.exports = {
     [
       '@babel/preset-react',
       {
-        development: isDevelopment,
-      },
+        development: isDevelopment
+      }
     ],
     [
       '@babel/preset-typescript',
       {
         isTSX: true,
-        allExtensions: true,
-      },
+        allExtensions: true
+      }
     ],
-    envPreset,
+    envPreset
   ],
   plugins: [
     ['@babel/plugin-proposal-class-properties', { loose: true }],
@@ -44,8 +46,8 @@ module.exports = {
         corejs: false,
         helpers: !isDevelopment,
         regenerator: !isDevelopment,
-        useESModules: !isDevelopment,
-      },
-    ],
-  ],
+        useESModules: !isDevelopment
+      }
+    ]
+  ]
 }
