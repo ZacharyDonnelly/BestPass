@@ -69,7 +69,7 @@
     "lint-staged": "13.0.4",
     "markdownlint-cli": "0.31.1",
     "postcss": "8.4.31",
-    "postcss-scss": "4.0.6",
+    "postcss-scss": "4.0.9",
     "prettier": "2.7.1",
     "regenerator-runtime": "0.13.11",
     "rimraf": "3.0.2",
