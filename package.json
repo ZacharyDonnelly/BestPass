@@ -61,7 +61,7 @@
     "css-loader": "6.7.3",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-n": "14.0.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-qunit": "7.3.0",
     "husky": "8.0.3",
